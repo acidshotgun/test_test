@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.057f964a.css",
+    "main.js": "/static/js/main.0ded467a.js",
+    "static/media/logo_welbex.svg": "/static/media/logo_welbex.2e08d1bd108cb8b2aee116b1817d851e.svg",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.ebe720f0c912eda28e2bf0613c18300f.svg",
+    "static/media/viber.svg": "/static/media/viber.efdbe6bd3950a854df10750809a40828.svg",
+    "index.html": "/index.html",
+    "static/media/telegram.svg": "/static/media/telegram.40ecd015eebebbe71b5bd0354d54208e.svg",
+    "main.057f964a.css.map": "/static/css/main.057f964a.css.map",
+    "main.0ded467a.js.map": "/static/js/main.0ded467a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.057f964a.css",
+    "static/js/main.0ded467a.js"
+  ]
+}
