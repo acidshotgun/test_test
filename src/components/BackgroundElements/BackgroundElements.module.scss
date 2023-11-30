@@ -1,0 +1,116 @@
+@import "../../styles/breacpoints.scss";
+@import "../../styles/variables.scss";
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1111;
+  .lightPurple {
+    position: absolute;
+    left: 602px;
+    top: -102px;
+    width: 259px;
+    height: 259px;
+    flex-shrink: 0;
+    border-radius: 259px;
+    opacity: 0.5;
+    background: #833ab4;
+    filter: blur(196px);
+    @include lg {
+      left: 360px;
+    }
+    @include md {
+      left: 60px;
+    }
+  }
+  .lightRed {
+    position: absolute;
+    left: -102px;
+    top: 251px;
+    width: 311px;
+    height: 311px;
+    flex-shrink: 0;
+    border-radius: 311px;
+    opacity: 0.5;
+    background: #961a1a;
+    filter: blur(196px);
+  }
+  .purpleBall {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 730px;
+    top: -115px;
+    border-radius: 100%;
+    background: radial-gradient(
+      82.3% 82.3% at 27.25% 26.5%,
+      rgba(236, 208, 255, 0.64) 0%,
+      rgba(161, 93, 207, 0.24) 59.67%,
+      rgba(118, 49, 164, 0.21) 78.59%,
+      rgba(86, 24, 128, 0.23) 100%
+    );
+    filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
+    backdrop-filter: blur(2px);
+    @include lg {
+      left: 660px;
+    }
+    @include md {
+      left: 360px;
+      top: 250px;
+    }
+    @include sm {
+      left: 260px;
+    }
+  }
+  .redBallBig {
+    width: 83px;
+    height: 83px;
+    position: absolute;
+    left: 399px;
+    top: -23px;
+    border-radius: 100%;
+    background: radial-gradient(
+      82.3% 82.3% at 27.25% 26.5%,
+      rgba(255, 208, 208, 0.54) 0%,
+      rgba(212, 93, 93, 0.26) 59.67%,
+      rgba(167, 49, 49, 0.25) 78.59%,
+      rgba(130, 25, 25, 0.25) 100%
+    );
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+    backdrop-filter: blur(2px);
+    @include md {
+      left: 260px;
+    }
+    @include sm {
+      display: none;
+    }
+  }
+  .redBallSmall {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 700px;
+    top: 425px;
+    border-radius: 100%;
+    background: radial-gradient(
+      82.3% 82.3% at 27.25% 26.5%,
+      rgba(255, 208, 208, 0.48) 0%,
+      rgba(212, 93, 93, 0.25) 59.67%,
+      rgba(167, 49, 49, 0.26) 78.59%,
+      rgba(130, 25, 25, 0.23) 100%
+    );
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
+    backdrop-filter: blur(2px);
+    @include lg {
+      left: 460px;
+    }
+    @include md {
+      left: 260px;
+    }
+    @include sm {
+      left: 38px;
+      top: 399px;
+    }
+  }
+}

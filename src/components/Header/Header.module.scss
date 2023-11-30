@@ -1,0 +1,107 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breacpoints.scss";
+
+header {
+  display: flex;
+  max-width: 1440px;
+  height: 73px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+  margin-top: 46px;
+  @include md {
+    margin-top: 0;
+    height: 55px;
+    background-color: $main_background;
+  }
+
+  .logo {
+    width: 140px;
+    height: 100%;
+    margin-top: 11px;
+    margin-right: 52px;
+    @include md {
+      display: none;
+    }
+    .descr {
+      color: $text_white;
+      font-size: 10px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      margin: 0;
+      margin-top: 6px;
+    }
+  }
+
+  .navigation {
+    @include md {
+      margin: 0 auto;
+    }
+    .list {
+      padding-left: 0;
+      padding-top: 15px;
+      display: flex;
+      @include sm {
+        padding-top: 20px;
+        text-transform: uppercase;
+      }
+
+      .listItem {
+        margin-right: 30px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        @include xl {
+          margin-right: 15px;
+        }
+        @include lg {
+          margin-right: 30px;
+        }
+        @include sm {
+          margin-right: 16px;
+          font-size: 12px;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        @include sm {
+          &:last-child {
+            margin-right: 0;
+            display: none;
+          }
+          &:nth-child(4) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .contacts {
+    margin-left: auto;
+    padding-top: 15px;
+    display: flex;
+    @include lg {
+      display: none;
+    }
+    .phone {
+      color: $text_white;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .socials {
+      display: flex;
+      margin-left: 47px;
+
+      .socialsItem {
+        margin-right: 30px;
+        display: flex;
+        @include xl {
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

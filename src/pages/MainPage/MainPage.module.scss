@@ -1,0 +1,167 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breacpoints.scss";
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 94px;
+  @include xl {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @include md {
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  @include sm {
+    align-items: center;
+    flex-direction: column;
+  }
+  h1 {
+    color: $text_white;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    @include md {
+      margin-bottom: 15px;
+    }
+    @include sm {
+      font-size: 36px;
+    }
+    span {
+      font-weight: 900;
+      background-image: linear-gradient(90deg, #fcb045, #ff3f78);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  p {
+    color: $text_white;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+
+  .descr {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: 54px repeat(2, 68px);
+    grid-column-gap: 31px;
+    grid-row-gap: 30px;
+    @include md {
+      margin-top: 45px;
+    }
+    @include sm {
+      grid-column-gap: 0px;
+      grid-row-gap: 10px;
+      grid-template-rows: 54px repeat(2, 20px);
+    }
+
+    .subheader {
+      color: $text_white;
+      font-size: 18px;
+      font-weight: 500;
+      text-align: end;
+      letter-spacing: 0.9px;
+      grid-area: 1 / 1 / 2 / 3;
+      @include sm {
+        text-align: start;
+      }
+      .textOne {
+        font-weight: 700;
+        background: var(
+          --gradient,
+          linear-gradient(90deg, #fcb045 -27.01%, #fd1d1d 100%)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @include sm {
+          text-transform: lowercase;
+        }
+      }
+      .textTwo {
+        font-weight: 700;
+        background: var(
+          --gradient,
+          linear-gradient(90deg, #fcb045 60.99%, #fd1d1d 116%)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @include sm {
+          text-transform: lowercase;
+        }
+      }
+    }
+    .item {
+      text-align: end;
+      color: $text_white;
+      // margin-top: 40px;
+      @include sm {
+        display: none;
+      }
+
+      .title {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+      }
+      .text {
+        margin-top: 6px;
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        @include sm {
+          display: none;
+        }
+      }
+    }
+    .itemAdaptive {
+      display: none;
+      @include sm {
+        display: flex;
+      }
+      .line {
+        width: 10px;
+        height: 1px;
+        margin-top: 8px;
+        margin-right: 5px;
+        background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+      }
+      .title {
+        font-size: 13px;
+        font-family: "Montserrat", sans-serif;
+        color: $text_white;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.button {
+  display: table;
+  margin-left: auto;
+  margin-top: 61px;
+
+  @include xl {
+    margin-right: 15px;
+  }
+  @include md {
+    margin: 0 auto;
+    margin-top: 61px;
+  }
+  @include sm {
+    display: none;
+  }
+}
